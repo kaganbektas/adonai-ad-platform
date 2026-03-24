@@ -1,0 +1,14 @@
+{
+  "target_cpa": 25,
+  "low_performance": {
+    "ctr_below": 1.0,
+    "cpa_multiplier": 2.0,
+    "roas_below": 1.0,
+    "zero_conversion_min_spend": 50
+  },
+  "high_performance": {
+    "ctr_above": 3.0,
+    "roas_above": 3.0,
+    "cpa_ratio": 0.5
+  }
+}

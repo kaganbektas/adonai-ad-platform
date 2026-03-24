@@ -1,0 +1,26 @@
+campaign_name,adset_name,ad_name,headline,description,impressions,clicks,ctr,cpc,cpm,cpa,conversions,conversion_rate,spend,roas,date
+Yaz Kampanyasi,18-35 Kadin,ad_001,Son 24 Saat! %50 Indirim,Yaz koleksiyonunda buyuk firsat. Hemen al kacirma!,15000,620,4.13,0.85,35.07,8.50,62,10.00,527.00,4.20,2026-03-01
+Yaz Kampanyasi,18-35 Kadin,ad_002,Ucretsiz Kargo + Ekstra %20,Tum siparislerinize ucretsiz kargo. Sinirli sure!,12000,480,4.00,0.92,36.67,9.20,48,10.00,441.60,3.80,2026-03-01
+Yaz Kampanyasi,25-45 Erkek,ad_003,Yeni Sezon Urunleri Geldi,En yeni trendleri kesfedin. Tarzinizi yansitir.,8000,160,2.00,1.50,30.00,24.00,10,6.25,240.00,1.80,2026-03-01
+Yaz Kampanyasi,25-45 Erkek,ad_004,Erkek Giyimde Ozel Fiyatlar,Sezon sonu indirimleri basliyor. Kacirmayin!,9500,190,2.00,1.40,28.00,25.20,10,5.26,252.00,1.60,2026-03-01
+Yaz Kampanyasi,Genis Kitle,ad_005,Herkes Icin Moda,Butcenize uygun secenekler. Ucretsiz iade!,20000,140,0.70,2.10,14.70,58.80,5,3.57,294.00,0.60,2026-03-01
+Yaz Kampanyasi,Genis Kitle,ad_006,Yaz Firsatlari Basladi,Bu yaz en iyisini hak ediyorsunuz.,18000,108,0.60,2.50,15.00,67.50,4,3.70,270.00,0.50,2026-03-01
+Okul Kampanyasi,Ogrenci,ad_007,Ogrencilere Ozel %30 Indirim,Okul sezonu icin ozel fiyatlar. Kimligini goster!,25000,1050,4.20,0.48,20.16,4.80,105,10.00,504.00,5.10,2026-03-05
+Okul Kampanyasi,Ogrenci,ad_008,Kampuste En Cool Sen Ol,Yeni sezon combolar hazir. Kesfet!,22000,770,3.50,0.65,22.77,6.50,77,10.00,500.50,3.50,2026-03-05
+Okul Kampanyasi,Veliler,ad_009,Cocugunuz Icin En Iyisi,Kaliteli ve uygun fiyatli okul kiyafetleri.,10000,200,2.00,1.20,24.00,20.00,12,6.00,240.00,2.00,2026-03-05
+Okul Kampanyasi,Veliler,ad_010,Okul Alisverisi Tamam,Her butceye uygun okul setleri. Hemen siparis ver.,11000,220,2.00,1.10,22.00,22.00,11,5.00,242.00,1.80,2026-03-05
+Okul Kampanyasi,Genis Kitle,ad_011,Okula Donus Kampanyasi,Bu firsat kacmaz. Son 3 gun!,15000,90,0.60,3.00,18.00,0.00,0,0.00,270.00,0.00,2026-03-05
+Okul Kampanyasi,Genis Kitle,ad_012,Sinirli Stok Urunler,Stoklar tukenmeden satin al.,13000,78,0.60,3.20,19.20,0.00,0,0.00,249.60,0.00,2026-03-05
+Marka Bilinirlik,18-25 Yas,ad_013,Tarzini Yarat,Kendi tarzini olustur. Binlerce secenek.,30000,960,3.20,0.52,16.64,5.20,96,10.00,499.20,3.20,2026-03-10
+Marka Bilinirlik,18-25 Yas,ad_014,#BenimStilim ile Paylas,Stilini paylas odul kazan! Yarisma basladi.,28000,1120,4.00,0.45,18.00,4.50,112,10.00,504.00,4.50,2026-03-10
+Marka Bilinirlik,25-40 Yas,ad_015,Premium Kalite Uygun Fiyat,Kaliteden odun vermeden alisveris.,12000,240,2.00,1.25,25.00,18.75,16,6.67,300.00,2.20,2026-03-10
+Marka Bilinirlik,25-40 Yas,ad_016,Yeni Koleksiyon Online,2026 ilkbahar-yaz koleksiyonu simdi online.,11000,165,1.50,1.60,24.00,26.40,10,6.06,264.00,1.50,2026-03-10
+Marka Bilinirlik,Retargeting,ad_017,Sepetindeki Urunler Seni Bekliyor,Sepetini unutma! Hemen tamamla.,5000,40,0.80,3.50,28.00,87.50,2,5.00,140.00,0.70,2026-03-10
+Marka Bilinirlik,Retargeting,ad_018,Geri Don %15 Ekstra Indirim,Sana ozel ek indirim. Firsati kacirma!,6000,42,0.70,3.80,26.60,0.00,0,0.00,159.60,0.00,2026-03-10
+Sezon Sonu,Tum Kitle,ad_019,Son Firsat: %70e Varan Indirim,Sezon sonu buyuk tasfiye. Her sey indirimde!,35000,1400,4.00,0.36,14.40,3.60,140,10.00,504.00,5.50,2026-03-15
+Sezon Sonu,Tum Kitle,ad_020,Tasfiye Basladi - Kacirma,Binlerce urunde inanilmaz fiyatlar.,32000,1280,4.00,0.39,15.60,4.00,128,10.00,499.20,4.80,2026-03-15
+Sezon Sonu,Sadik Musteriler,ad_021,VIP Musterilere Ozel Erisim,Tasfiye oncesi erken erisim sadece size.,8000,240,3.00,1.00,30.00,10.00,24,10.00,240.00,3.50,2026-03-15
+Sezon Sonu,Sadik Musteriler,ad_022,Sadakat Puanlarinizi Kullanin,Puanlarinizla ekstra indirim. Son 5 gun!,7500,150,2.00,1.33,26.60,16.60,12,8.00,199.50,2.50,2026-03-15
+Sezon Sonu,Yeni Musteriler,ad_023,Ilk Alisverisine %25 Indirim,Hosgeldin indirimi! Ilk siparisine ozel.,10000,300,3.00,0.83,24.90,8.30,30,10.00,249.00,3.20,2026-03-15
+Sezon Sonu,Yeni Musteriler,ad_024,Bizi Deneyin Memnun Kalin,30 gun iade garantisi. Risksiz alisveris.,9000,63,0.70,4.00,28.00,0.00,0,0.00,252.00,0.00,2026-03-15
+Sezon Sonu,Lookalike,ad_025,Trend Urunler Burada,En cok satanlar simdi indirimde. Hemen bak!,14000,98,0.70,2.80,19.60,54.88,5,5.10,274.40,0.80,2026-03-15

@@ -1,0 +1,62 @@
+{
+  "yemek": {
+    "label": "Yemek & Restoran",
+    "fonts": "Poppins:wght@600;700;800&family=Inter:wght@400;500;600",
+    "image_prompt_template": "professional food photography, {{product}}, clean dark moody background, dramatic studio lighting, appetizing presentation, no text, no logo, no watermark, 1080x1080",
+    "styles": {
+      "minimal":          { "bg_color": "#fffaf5", "accent_color": "#e65100", "cta": "Sipariş Ver" },
+      "gradient":         { "bg_color": "#1a0a00", "accent_color": "#ff6d00", "cta": "Fırsatı Yakala" },
+      "urgency":          { "bg_color": "#bf360c", "accent_color": "#ffd600", "cta": "Hemen Sipariş Ver" },
+      "social-proof":     { "bg_color": "#fff8f0", "accent_color": "#d84315", "cta": "Hemen Dene" },
+      "product-focused":  { "bg_color": "#ffffff", "accent_color": "#ff6d00", "cta": "Menüyü Gör" }
+    }
+  },
+  "teknoloji": {
+    "label": "Teknoloji",
+    "fonts": "Poppins:wght@600;700;800&family=Inter:wght@400;500;600",
+    "image_prompt_template": "minimalist product photography, {{product}}, clean white background, soft shadows, modern tech aesthetic, no text, no logo, no watermark, 1080x1080",
+    "styles": {
+      "minimal":          { "bg_color": "#0a0a1a", "accent_color": "#00e5ff", "cta": "Keşfet" },
+      "gradient":         { "bg_color": "#0d0d2b", "accent_color": "#7c4dff", "cta": "Hemen Al" },
+      "urgency":          { "bg_color": "#1a237e", "accent_color": "#00e676", "cta": "Hemen Al" },
+      "social-proof":     { "bg_color": "#f5f5f7", "accent_color": "#0d47a1", "cta": "İncele" },
+      "product-focused":  { "bg_color": "#121212", "accent_color": "#00e5ff", "cta": "Keşfet" }
+    }
+  },
+  "hizmet": {
+    "label": "Hizmet",
+    "fonts": "Poppins:wght@600;700;800&family=Inter:wght@400;500;600",
+    "image_prompt_template": "professional lifestyle photography, {{product}}, bright natural lighting, friendly atmosphere, no text, no logo, no watermark, 1080x1080",
+    "styles": {
+      "minimal":          { "bg_color": "#f0f7ff", "accent_color": "#1565c0", "cta": "Bilgi Al" },
+      "gradient":         { "bg_color": "#0a2540", "accent_color": "#4caf50", "cta": "Randevu Al" },
+      "urgency":          { "bg_color": "#1b5e20", "accent_color": "#ffd600", "cta": "Hemen Ara" },
+      "social-proof":     { "bg_color": "#f5faf5", "accent_color": "#2e7d32", "cta": "Bilgi Al" },
+      "product-focused":  { "bg_color": "#ffffff", "accent_color": "#1565c0", "cta": "Randevu Al" }
+    }
+  },
+  "moda": {
+    "label": "Moda",
+    "fonts": "Playfair+Display:wght@700;800&family=Inter:wght@400;500;600",
+    "image_prompt_template": "high-end fashion photography, {{product}}, elegant studio setup, soft lighting, luxury feel, no text, no logo, no watermark, 1080x1080",
+    "styles": {
+      "minimal":          { "bg_color": "#ffffff", "accent_color": "#bfa046", "cta": "Hemen Al" },
+      "gradient":         { "bg_color": "#1a1a1a", "accent_color": "#bfa046", "cta": "Koleksiyonu Gör" },
+      "urgency":          { "bg_color": "#212121", "accent_color": "#ffd700", "cta": "Hemen Al" },
+      "social-proof":     { "bg_color": "#fafafa", "accent_color": "#212121", "cta": "Hemen Al" },
+      "product-focused":  { "bg_color": "#f5f5f5", "accent_color": "#bfa046", "cta": "Koleksiyonu Gör" }
+    }
+  },
+  "egitim": {
+    "label": "Eğitim",
+    "fonts": "Poppins:wght@600;700;800&family=Inter:wght@400;500;600",
+    "image_prompt_template": "bright colorful illustration, {{product}}, modern flat design, energetic mood, no text, no logo, no watermark, 1080x1080",
+    "styles": {
+      "minimal":          { "bg_color": "#f3e5f5", "accent_color": "#7b1fa2", "cta": "Kayıt Ol" },
+      "gradient":         { "bg_color": "#1a0533", "accent_color": "#00bcd4", "cta": "Ücretsiz Dene" },
+      "urgency":          { "bg_color": "#4a148c", "accent_color": "#ffab00", "cta": "Hemen Kayıt Ol" },
+      "social-proof":     { "bg_color": "#f5f5ff", "accent_color": "#5e35b1", "cta": "Ücretsiz Dene" },
+      "product-focused":  { "bg_color": "#ffffff", "accent_color": "#00897b", "cta": "Keşfet" }
+    }
+  }
+}

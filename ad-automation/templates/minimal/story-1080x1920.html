@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px; height: 1920px;
+    background: {{bg_color}};
+    font-family: 'Inter', sans-serif;
+    display: flex; overflow: hidden; position: relative;
+  }
+  body::before {
+    content: ''; position: absolute; inset: 0;
+    background: repeating-linear-gradient(135deg, transparent, transparent 50px, rgba(0,0,0,0.012) 50px, rgba(0,0,0,0.012) 52px);
+  }
+  .corner-tl, .corner-br { position: absolute; width: 64px; height: 64px; z-index: 2; }
+  .corner-tl { top: 48px; right: 48px; border-top: 2px solid rgba(0,0,0,0.06); border-right: 2px solid rgba(0,0,0,0.06); }
+  .corner-br { bottom: 48px; right: 48px; border-bottom: 2px solid rgba(0,0,0,0.06); border-right: 2px solid rgba(0,0,0,0.06); }
+  .accent-bar { width: 12px; height: 100%; background: linear-gradient(180deg, {{accent_color}}, {{accent_color}}88); flex-shrink: 0; z-index: 1; }
+  .accent-line { width: 2px; height: 100%; background: {{accent_color}}30; flex-shrink: 0; z-index: 1; margin-left: 8px; }
+  .content {
+    flex: 1; display: flex; flex-direction: column;
+    justify-content: center; padding: 120px 80px 120px 64px; position: relative; z-index: 1;
+  }
+  .label { font-weight: 600; font-size: 18px; color: {{accent_color}}; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 36px; }
+  .headline {
+    font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 76px;
+    color: #1a1a2e; line-height: 1.12; letter-spacing: -1px;
+  }
+  .divider { width: 100px; height: 5px; background: linear-gradient(90deg, {{accent_color}}, {{accent_color}}33); border-radius: 3px; margin: 32px 0 36px 0; }
+  .description { font-size: 34px; font-weight: 400; color: #4a4a68; line-height: 1.55; margin-bottom: 64px; max-width: 850px; }
+  .cta {
+    display: inline-block; width: fit-content; background: {{accent_color}}; color: #fff;
+    font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 30px;
+    padding: 26px 72px; border-radius: 8px;
+    box-shadow: 0 6px 24px {{accent_color}}44, 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .bottom-bar { position: absolute; bottom: 0; left: 12px; right: 0; height: 3px; background: linear-gradient(90deg, {{accent_color}}20, transparent); z-index: 2; }
+</style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="accent-line"></div>
+  <div class="content">
+    <div class="label">Özel Kampanya</div>
+    <div class="headline">{{headline}}</div>
+    <div class="divider"></div>
+    <div class="description">{{description}}</div>
+    <div class="cta">{{cta}}</div>
+  </div>
+  <div class="corner-tl"></div>
+  <div class="corner-br"></div>
+  <div class="bottom-bar"></div>
+</body>
+</html>

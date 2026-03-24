@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 628px;
+    background: {{bg_color}};
+    font-family: 'Inter', sans-serif;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center; padding: 40px 80px;
+    overflow: hidden; position: relative;
+  }
+  body::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(circle, #ffc10718 1px, transparent 1px) 60px 40px / 100px 100px;
+  }
+  .corner-tl, .corner-br { position: absolute; width: 36px; height: 36px; z-index: 2; }
+  .corner-tl { top: 20px; left: 20px; border-top: 2px solid rgba(230,81,0,0.08); border-left: 2px solid rgba(230,81,0,0.08); }
+  .corner-br { bottom: 20px; right: 20px; border-bottom: 2px solid rgba(230,81,0,0.08); border-right: 2px solid rgba(230,81,0,0.08); }
+  .social-badge {
+    background: #fff; border: 2px solid #ffc107; border-radius: 12px; padding: 14px 32px;
+    margin-bottom: 24px; display: flex; align-items: center; gap: 12px;
+    box-shadow: 0 3px 12px rgba(255,193,7,0.15); position: relative; z-index: 1;
+  }
+  .stars { font-size: 24px; }
+  .social-text { font-weight: 600; font-size: 18px; color: #e65100; }
+  .headline {
+    font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 48px;
+    color: #1a1a2e; line-height: 1.15; margin-bottom: 14px; position: relative; z-index: 1;
+  }
+  .description {
+    font-size: 22px; font-weight: 400; color: #4a4a68; line-height: 1.5;
+    margin-bottom: 28px; max-width: 900px; position: relative; z-index: 1;
+  }
+  .cta {
+    display: inline-block; background: {{accent_color}}; color: #fff;
+    font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 20px;
+    padding: 16px 48px; border-radius: 60px;
+    box-shadow: 0 4px 16px rgba(230,81,0,0.2); position: relative; z-index: 1;
+  }
+</style>
+</head>
+<body>
+  <div class="corner-tl"></div><div class="corner-br"></div>
+  <div class="social-badge">
+    <span class="stars">⭐⭐⭐⭐⭐</span>
+    <span class="social-text">500+ Mutlu Müşteri</span>
+  </div>
+  <div class="headline">{{headline}}</div>
+  <div class="description">{{description}}</div>
+  <div class="cta">{{cta}}</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 628px;
+    background: {{bg_color}};
+    font-family: 'Inter', sans-serif;
+    display: flex; overflow: hidden; position: relative;
+  }
+  body::before {
+    content: ''; position: absolute; inset: 0;
+    background: repeating-linear-gradient(135deg, transparent, transparent 36px, rgba(230,81,0,0.02) 36px, rgba(230,81,0,0.02) 38px);
+  }
+  .corner-tl, .corner-br { position: absolute; width: 44px; height: 44px; z-index: 2; }
+  .corner-tl { top: 24px; right: 24px; border-top: 2px solid rgba(230,81,0,0.1); border-right: 2px solid rgba(230,81,0,0.1); }
+  .corner-br { bottom: 24px; right: 24px; border-bottom: 2px solid rgba(230,81,0,0.1); border-right: 2px solid rgba(230,81,0,0.1); }
+  .accent-bar { width: 8px; height: 100%; background: linear-gradient(180deg, {{accent_color}}, #ff8a00); flex-shrink: 0; z-index: 1; }
+  .accent-line { width: 2px; height: 100%; background: {{accent_color}}30; flex-shrink: 0; z-index: 1; margin-left: 5px; }
+  .content {
+    flex: 1; display: flex; flex-direction: column;
+    justify-content: center; padding: 48px 60px 48px 48px; position: relative; z-index: 1;
+  }
+  .label { font-weight: 600; font-size: 13px; color: {{accent_color}}; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 18px; }
+  .headline {
+    font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 48px;
+    color: #2d1600; line-height: 1.12; letter-spacing: -1px;
+  }
+  .divider { width: 64px; height: 3px; background: linear-gradient(90deg, {{accent_color}}, #ff8a0033); border-radius: 2px; margin: 16px 0 20px 0; }
+  .description { font-size: 22px; font-weight: 400; color: #5d4037; line-height: 1.5; margin-bottom: 32px; max-width: 880px; }
+  .cta {
+    display: inline-block; width: fit-content; background: {{accent_color}}; color: #fff;
+    font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 20px;
+    padding: 16px 48px; border-radius: 50px;
+    box-shadow: 0 6px 24px {{accent_color}}44, 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .bottom-bar { position: absolute; bottom: 0; left: 8px; right: 0; height: 3px; background: linear-gradient(90deg, {{accent_color}}30, transparent); z-index: 2; }
+  .image-circle {
+    position: absolute; right: 56px; top: 50%; transform: translateY(-50%);
+    width: 220px; height: 220px; border-radius: 50%; overflow: hidden;
+    border: 3px solid {{accent_color}}20; z-index: 1;
+    box-shadow: 0 6px 24px rgba(230,81,0,0.1);
+  }
+  .image-circle img { width: 100%; height: 100%; object-fit: cover; }
+</style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="accent-line"></div>
+  <div class="content">
+    <div class="label">🍴 Günün Menüsü</div>
+    <div class="headline">{{headline}}</div>
+    <div class="divider"></div>
+    <div class="description">{{description}}</div>
+    <div class="cta">{{cta}}</div>
+  </div>
+  <div class="image-circle" style="display:{{image_display}}"><img src="{{product_image}}"></div>
+  <div class="corner-tl"></div>
+  <div class="corner-br"></div>
+  <div class="bottom-bar"></div>
+</body>
+</html>

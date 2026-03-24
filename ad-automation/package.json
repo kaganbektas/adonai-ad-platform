@@ -1,0 +1,24 @@
+{
+  "name": "ad-automation",
+  "version": "1.0.0",
+  "description": "Dijital reklam performans analiz ve otomasyon pipeline",
+  "scripts": {
+    "fetch": "node scripts/01-fetch-data.js",
+    "analyze": "node scripts/02-analyze.js",
+    "generate": "node scripts/03-generate-copy.js",
+    "render": "node scripts/04-render-ads.js",
+    "generate-images": "node scripts/05-generate-images.js",
+    "competitor-analysis": "node scripts/06-competitor-analysis.js",
+    "trend-analysis": "node scripts/07-trend-analysis.js",
+    "report": "node scripts/08-generate-report.js",
+    "brand-analysis": "node scripts/09-brand-analysis.js",
+    "pipeline": "node scripts/run-pipeline.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@google/generative-ai": "^0.24.0",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.0",
+    "puppeteer": "^24.0.0"
+  }
+}

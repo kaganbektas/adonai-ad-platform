@@ -1,0 +1,6 @@
+{
+  "model": "gemini-3.1-flash-image-preview",
+  "image_size": "1024x1024",
+  "max_images": 8,
+  "rate_limit_ms": 1500
+}

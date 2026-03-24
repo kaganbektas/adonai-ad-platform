@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px; height: 1920px;
+    background: {{bg_color}};
+    font-family: 'Inter', sans-serif;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center; padding: 80px;
+    overflow: hidden; position: relative;
+  }
+  body::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      radial-gradient(circle, #ffc10720 1px, transparent 1px) 80px 60px / 120px 120px,
+      radial-gradient(circle, #e6510015 1px, transparent 1px) 40px 140px / 160px 160px;
+  }
+  .corner-tl, .corner-br { position: absolute; width: 48px; height: 48px; z-index: 2; }
+  .corner-tl { top: 40px; left: 40px; border-top: 2px solid rgba(230,81,0,0.1); border-left: 2px solid rgba(230,81,0,0.1); }
+  .corner-br { bottom: 40px; right: 40px; border-bottom: 2px solid rgba(230,81,0,0.1); border-right: 2px solid rgba(230,81,0,0.1); }
+  .social-badge {
+    background: #fff; border: 2px solid #ffc107; border-radius: 16px; padding: 24px 48px;
+    margin-bottom: 56px; box-shadow: 0 4px 20px rgba(255,193,7,0.15); position: relative; z-index: 1;
+  }
+  .stars { font-size: 44px; margin-bottom: 10px; }
+  .social-text { font-weight: 600; font-size: 26px; color: #e65100; }
+  .headline {
+    font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 72px;
+    color: #1a1a2e; line-height: 1.15; margin-bottom: 32px; position: relative; z-index: 1;
+  }
+  .description {
+    font-size: 32px; font-weight: 400; color: #4a4a68; line-height: 1.5;
+    margin-bottom: 56px; max-width: 900px; position: relative; z-index: 1;
+  }
+  .cta {
+    display: inline-block; background: {{accent_color}}; color: #fff;
+    font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 30px;
+    padding: 26px 72px; border-radius: 60px;
+    box-shadow: 0 6px 24px rgba(230,81,0,0.25); position: relative; z-index: 1;
+  }
+  .trust-icons { margin-top: 48px; display: flex; gap: 40px; position: relative; z-index: 1; }
+  .trust-item {
+    font-size: 22px; color: #616161; font-weight: 500;
+    background: rgba(255,255,255,0.7); padding: 10px 20px; border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+</style>
+</head>
+<body>
+  <div class="corner-tl"></div><div class="corner-br"></div>
+  <div class="social-badge">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="social-text">500+ Mutlu Müşteri</div>
+  </div>
+  <div class="headline">{{headline}}</div>
+  <div class="description">{{description}}</div>
+  <div class="cta">{{cta}}</div>
+  <div class="trust-icons">
+    <span class="trust-item">✓ Ücretsiz Kargo</span>
+    <span class="trust-item">✓ 30 Gün İade</span>
+    <span class="trust-item">✓ Güvenli Ödeme</span>
+  </div>
+</body>
+</html>

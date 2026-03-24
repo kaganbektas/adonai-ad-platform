@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px; height: 1920px;
+    background: linear-gradient(180deg, #bf360c 0%, #e65100 40%, #ff6d00 100%);
+    font-family: 'Inter', sans-serif;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center; padding: 80px;
+    overflow: hidden; position: relative;
+  }
+  body::before {
+    content: ''; position: absolute; inset: 0;
+    background: repeating-linear-gradient(45deg, transparent, transparent 24px, rgba(0,0,0,0.03) 24px, rgba(0,0,0,0.03) 26px);
+  }
+  .bg-image { position: absolute; inset: 0; z-index: 0; }
+  .bg-image img { width: 100%; height: 100%; object-fit: cover; opacity: 0.25; }
+  .pulse-ring {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 700px; height: 700px; border-radius: 50%;
+    border: 2px solid rgba(255,214,0,0.08);
+  }
+  .banner {
+    position: absolute; top: 0; left: 0; right: 0;
+    background: {{accent_color}}; color: #1a0a00;
+    font-family: 'Poppins', sans-serif; font-weight: 800;
+    font-size: 32px; padding: 22px 0; text-align: center;
+    letter-spacing: 3px; z-index: 3;
+  }
+  .banner-border { position: absolute; top: 76px; left: 0; right: 0; height: 4px; background: rgba(0,0,0,0.1); z-index: 3; }
+  .corner-bl { position: absolute; bottom: 48px; left: 48px; width: 56px; height: 56px; border-bottom: 2px solid rgba(255,214,0,0.15); border-left: 2px solid rgba(255,214,0,0.15); z-index: 2; }
+  .headline {
+    font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 78px;
+    color: #ffffff; line-height: 1.1; margin-bottom: 32px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.2); position: relative; z-index: 1;
+  }
+  .description {
+    font-size: 34px; font-weight: 400; color: rgba(255,255,255,0.92); line-height: 1.5;
+    margin-bottom: 56px; max-width: 900px; position: relative; z-index: 1;
+  }
+  .cta {
+    display: inline-block; background: {{accent_color}}; color: #1a0a00;
+    font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 32px;
+    padding: 26px 72px; border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.15); position: relative; z-index: 1;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+  <div class="bg-image" style="display:{{image_display}}"><img src="{{product_image}}"></div>
+  <div class="banner"><span>🔥 SON ŞANS!</span></div>
+  <div class="banner-border"></div>
+  <div class="pulse-ring"></div>
+  <div class="corner-bl"></div>
+  <div class="headline">{{headline}}</div>
+  <div class="description">{{description}}</div>
+  <div class="cta">{{cta}}</div>
+</body>
+</html>

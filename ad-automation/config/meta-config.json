@@ -1,0 +1,15 @@
+{
+  "api_version": "v21.0",
+  "base_url": "https://graph.facebook.com",
+  "insights_fields": [
+    "campaign_name", "adset_name", "ad_name",
+    "impressions", "clicks", "ctr", "cpc", "cpm",
+    "spend", "actions", "cost_per_action_type", "ad_id"
+  ],
+  "creative_fields": ["title", "body", "image_url", "thumbnail_url"],
+  "default_days": 30,
+  "rate_limit": {
+    "max_retries": 3,
+    "base_delay_ms": 2000
+  }
+}

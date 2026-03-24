@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px; height: 1920px;
+    background: linear-gradient(160deg, #1a0a00 0%, #4e1500 30%, #bf360c 70%, #e65100 100%);
+    font-family: 'Inter', sans-serif;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center; padding: 80px;
+    overflow: hidden; position: relative;
+  }
+  body::before {
+    content: ''; position: absolute; top: -200px; right: -200px;
+    width: 600px; height: 600px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,109,0,0.12) 0%, transparent 70%);
+  }
+  body::after {
+    content: ''; position: absolute; bottom: -200px; left: -200px;
+    width: 500px; height: 500px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,214,0,0.08) 0%, transparent 70%);
+  }
+  .bg-image { position: absolute; inset: 0; z-index: 0; }
+  .bg-image img { width: 100%; height: 100%; object-fit: cover; opacity: 0.2; }
+  .glow-border {
+    position: absolute; inset: 20px; border-radius: 24px;
+    border: 1px solid rgba(255,140,0,0.1);
+    box-shadow: inset 0 0 80px rgba(255,109,0,0.05);
+  }
+  .corner-tl, .corner-br { position: absolute; width: 52px; height: 52px; z-index: 2; }
+  .corner-tl { top: 40px; left: 40px; border-top: 2px solid rgba(255,140,0,0.12); border-left: 2px solid rgba(255,140,0,0.12); }
+  .corner-br { bottom: 40px; right: 40px; border-bottom: 2px solid rgba(255,140,0,0.12); border-right: 2px solid rgba(255,140,0,0.12); }
+  .headline {
+    font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 80px;
+    color: #ffffff; line-height: 1.1; margin-bottom: 36px;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.3); position: relative; z-index: 1;
+  }
+  .description {
+    font-size: 34px; font-weight: 400; color: rgba(255,255,255,0.88); line-height: 1.5;
+    margin-bottom: 64px; max-width: 900px; position: relative; z-index: 1;
+  }
+  .cta {
+    display: inline-block; background: {{accent_color}}; color: #1a0a00;
+    font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 30px;
+    padding: 26px 72px; border-radius: 60px;
+    box-shadow: 0 0 40px rgba(255,109,0,0.2), 0 8px 32px rgba(0,0,0,0.2);
+    position: relative; z-index: 1;
+  }
+  .price-tag {
+    position: absolute; top: 64px; right: 56px;
+    background: {{accent_color}}; color: #1a0a00;
+    font-family: 'Poppins', sans-serif; font-weight: 800;
+    font-size: 28px; padding: 20px 32px; border-radius: 12px;
+    transform: rotate(3deg); z-index: 3;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  }
+</style>
+</head>
+<body>
+  <div class="bg-image" style="display:{{image_display}}"><img src="{{product_image}}"></div>
+  <div class="glow-border"></div>
+  <div class="corner-tl"></div><div class="corner-br"></div>
+  <div class="price-tag">🔥 FIRSATI YAKALA</div>
+  <div class="headline">{{headline}}</div>
+  <div class="description">{{description}}</div>
+  <div class="cta">{{cta}}</div>
+</body>
+</html>

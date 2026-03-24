@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px; height: 1920px;
+    background: linear-gradient(180deg, #b71c1c 0%, #d84315 40%, #e65100 70%, #ff6d00 100%);
+    font-family: 'Inter', sans-serif;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center; padding: 80px;
+    overflow: hidden; position: relative;
+  }
+  body::before {
+    content: ''; position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px;
+    background: repeating-linear-gradient(45deg, transparent, transparent 60px, rgba(0,0,0,0.03) 60px, rgba(0,0,0,0.03) 62px);
+  }
+  .urgency-banner {
+    position: absolute; top: 0; left: 0; right: 0;
+    background: rgba(0,0,0,0.35); padding: 24px;
+    display: flex; justify-content: center; align-items: center; gap: 12px;
+    border-bottom: 3px solid #ffeb3b44;
+  }
+  .urgency-banner span { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 32px; color: #ffeb3b; letter-spacing: 2px; }
+  .timer-icon { font-size: 40px; }
+  .headline {
+    font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 80px;
+    color: #ffffff; line-height: 1.1; margin-bottom: 36px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.3); position: relative; z-index: 1;
+  }
+  .description {
+    font-size: 34px; font-weight: 400; color: rgba(255,255,255,0.9); line-height: 1.5;
+    margin-bottom: 64px; max-width: 900px; position: relative; z-index: 1;
+  }
+  .cta {
+    display: inline-block; background: #ffeb3b; color: #b71c1c;
+    font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 32px;
+    padding: 28px 80px; border-radius: 60px;
+    box-shadow: 0 0 40px rgba(255,235,59,0.3), 0 8px 32px rgba(0,0,0,0.25);
+    text-transform: uppercase; letter-spacing: 1px; position: relative; z-index: 1;
+  }
+  .pulse-ring { position: absolute; bottom: 120px; right: 100px; width: 140px; height: 140px; border-radius: 50%; border: 2px solid rgba(255,235,59,0.2); }
+  .corner-bl { position: absolute; bottom: 40px; left: 40px; width: 48px; height: 48px; border-bottom: 2px solid rgba(255,235,59,0.15); border-left: 2px solid rgba(255,235,59,0.15); }
+</style>
+</head>
+<body>
+  <div class="urgency-banner">
+    <span class="timer-icon">⏰</span>
+    <span>SON 24 SAAT!</span>
+  </div>
+  <div class="headline">{{headline}}</div>
+  <div class="description">{{description}}</div>
+  <div class="cta">{{cta}}</div>
+  <div class="pulse-ring"></div>
+  <div class="corner-bl"></div>
+</body>
+</html>

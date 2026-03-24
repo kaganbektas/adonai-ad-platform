@@ -1,0 +1,8 @@
+{
+  "model": "claude-haiku-4-5-20251001",
+  "max_tokens": 2000,
+  "platform_limits": {
+    "meta": { "headline": 40, "description": 125 },
+    "google": { "headline": 30, "description": 90 }
+  }
+}

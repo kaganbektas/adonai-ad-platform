@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px; height: 1080px;
+    background: linear-gradient(160deg, #b71c1c 0%, #d84315 50%, #e65100 100%);
+    font-family: 'Inter', sans-serif;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center; padding: 80px;
+    overflow: hidden; position: relative;
+  }
+  /* Diagonal warning stripes */
+  body::before {
+    content: ''; position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px;
+    background: repeating-linear-gradient(45deg, transparent, transparent 60px, rgba(0,0,0,0.03) 60px, rgba(0,0,0,0.03) 62px);
+  }
+  .urgency-banner {
+    position: absolute; top: 0; left: 0; right: 0;
+    background: rgba(0,0,0,0.35); padding: 20px;
+    display: flex; justify-content: center; align-items: center; gap: 12px;
+    border-bottom: 3px solid #ffeb3b44;
+  }
+  .urgency-banner span { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 28px; color: #ffeb3b; letter-spacing: 2px; }
+  .timer-icon { font-size: 36px; }
+  .headline {
+    font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 68px;
+    color: #ffffff; line-height: 1.1; margin-bottom: 28px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.3); position: relative; z-index: 1;
+  }
+  .description {
+    font-size: 28px; font-weight: 400; color: rgba(255,255,255,0.9); line-height: 1.5;
+    margin-bottom: 48px; max-width: 800px; position: relative; z-index: 1;
+  }
+  .cta {
+    display: inline-block; background: #ffeb3b; color: #b71c1c;
+    font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 28px;
+    padding: 24px 72px; border-radius: 60px;
+    box-shadow: 0 0 40px rgba(255,235,59,0.3), 0 8px 32px rgba(0,0,0,0.25);
+    text-transform: uppercase; letter-spacing: 1px; position: relative; z-index: 1;
+  }
+  /* Pulse rings */
+  .pulse-ring, .pulse-ring-2 { position: absolute; border-radius: 50%; z-index: 0; }
+  .pulse-ring { bottom: 70px; right: 70px; width: 120px; height: 120px; border: 2px solid rgba(255,235,59,0.2); }
+  .pulse-ring-2 { bottom: 85px; right: 85px; width: 90px; height: 90px; border: 2px solid rgba(255,235,59,0.15); }
+  /* Köşe dekorasyonları */
+  .corner-bl { position: absolute; bottom: 32px; left: 32px; width: 48px; height: 48px; border-bottom: 2px solid rgba(255,235,59,0.15); border-left: 2px solid rgba(255,235,59,0.15); }
+</style>
+</head>
+<body>
+  <div class="urgency-banner">
+    <span class="timer-icon">⏰</span>
+    <span>SON 24 SAAT!</span>
+  </div>
+  <div class="headline">{{headline}}</div>
+  <div class="description">{{description}}</div>
+  <div class="cta">{{cta}}</div>
+  <div class="pulse-ring"></div>
+  <div class="pulse-ring-2"></div>
+  <div class="corner-bl"></div>
+</body>
+</html>

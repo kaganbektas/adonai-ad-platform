@@ -1,0 +1,7 @@
+{
+  "yemek":     { "avg_ctr": 1.8, "avg_cpc": 0.45, "avg_cpa": 18, "avg_roas": 3.2, "avg_conversion_rate": 2.5 },
+  "teknoloji": { "avg_ctr": 1.2, "avg_cpc": 0.85, "avg_cpa": 35, "avg_roas": 2.5, "avg_conversion_rate": 1.8 },
+  "hizmet":    { "avg_ctr": 1.5, "avg_cpc": 0.60, "avg_cpa": 22, "avg_roas": 2.8, "avg_conversion_rate": 2.2 },
+  "moda":      { "avg_ctr": 1.6, "avg_cpc": 0.55, "avg_cpa": 20, "avg_roas": 3.5, "avg_conversion_rate": 2.8 },
+  "egitim":    { "avg_ctr": 1.4, "avg_cpc": 0.40, "avg_cpa": 15, "avg_roas": 4.0, "avg_conversion_rate": 3.0 }
+}

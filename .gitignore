@@ -1,0 +1,65 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables (NEVER commit these)
+.env
+.env.local
+.env.production
+*.env
+
+# Generated data & uploads
+ad-automation/data/analysis/
+ad-automation/data/copy/
+ad-automation/data/input/upload-*
+ad-automation/data/output/
+ad-automation/data/reports/
+ad-automation/assets/generated/
+
+# Build output
+adpilot-ai-suite/dist/
+adpilot-ai-suite/.vite/
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+.DS_Store
+
+# Pipeline status files
+adpilot-ai-suite/server/pipeline-status/
+ad-automation/data/status/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Claude Code context
+.claude/
+
+# Unrelated project files
+*.cs
+*.pdf
+*.png
+EsnafAsistan/
+VoiceAgent/
+ViewTasarimi/
+adonai-ui/
+ai-web-scraper/
+scrapekit/
+scrapekit-tr/
+openclaw-rehber/
+stitch/
+food ads polar space/
+app.js
+index.html
+style.css
+convert_to_pdf.py
+ders10_*
+Proje_Raporu.md
+DIGITAL_APPRENTICE_PHASE2_PLAN.md
+*.sql
+test-pipeline-run.sh

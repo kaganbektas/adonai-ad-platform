@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px; height: 1920px;
+    background: {{bg_color}};
+    font-family: 'Inter', sans-serif;
+    overflow: hidden; position: relative;
+  }
+  .image-area {
+    width: 100%; height: 920px; position: relative;
+    background: linear-gradient(135deg, #e0e7ee 0%, #c9d6e3 40%, #b8c8d8 100%);
+    overflow: hidden;
+  }
+  .image-area::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      linear-gradient(60deg, transparent 40%, rgba(255,255,255,0.08) 40%, rgba(255,255,255,0.08) 42%, transparent 42%),
+      linear-gradient(-60deg, transparent 40%, rgba(255,255,255,0.06) 40%, rgba(255,255,255,0.06) 42%, transparent 42%);
+  }
+  .image-area::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 150px;
+    background: linear-gradient(transparent, {{bg_color}});
+  }
+  .shopping-icon {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .bag { width: 140px; height: 160px; border: 4px solid rgba(255,255,255,0.25); border-radius: 0 0 24px 24px; position: relative; }
+  .bag::before {
+    content: ''; position: absolute; top: -44px; left: 28px;
+    width: 80px; height: 44px; border: 4px solid rgba(255,255,255,0.25);
+    border-radius: 44px 44px 0 0; border-bottom: none;
+  }
+  .bag-label { color: rgba(255,255,255,0.35); font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 20px; margin-top: 20px; letter-spacing: 2px; }
+  .content {
+    padding: 56px 72px 64px;
+    display: flex; flex-direction: column;
+    justify-content: center; height: 1000px;
+  }
+  .headline {
+    font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 64px;
+    color: #1a1a2e; line-height: 1.15; margin-bottom: 28px;
+  }
+  .description { font-size: 30px; font-weight: 400; color: #4a4a68; line-height: 1.5; margin-bottom: 48px; }
+  .cta {
+    display: inline-block; width: fit-content;
+    background: {{accent_color}}; color: #fff;
+    font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 28px;
+    padding: 24px 64px; border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,184,148,0.25);
+  }
+  .corner-br { position: absolute; bottom: 32px; right: 32px; width: 44px; height: 44px; border-bottom: 2px solid rgba(0,0,0,0.06); border-right: 2px solid rgba(0,0,0,0.06); }
+</style>
+</head>
+<body>
+  <div class="image-area">
+    <div class="shopping-icon">
+      <div class="bag"></div>
+      <div class="bag-label">ÜRÜN</div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="headline">{{headline}}</div>
+    <div class="description">{{description}}</div>
+    <div class="cta">{{cta}}</div>
+  </div>
+  <div class="corner-br"></div>
+</body>
+</html>
